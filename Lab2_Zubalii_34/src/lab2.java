@@ -17,6 +17,7 @@ public class lab2
 * @throws FileNotFoundException
 * 
 */
+	
 	public static void main(String[] args) throws FileNotFoundException
 	 {
 	 int nRows;
@@ -46,11 +47,16 @@ public class lab2
 	   for(int j = 0  ; j < nRows - temp; j++)
 	   {
 	     if(filler.length() == 1)
-	     {
+	     { 
 	       if(j >= temp) {
-	       arr[i][j] = (char) filler.codePointAt(0);
-	       System.out.print(arr[i][j] + " ");
-	       fout.print(arr[i][j] + " ");
+	    	   if(i == 1 || j==1 ) {
+	    		   	arr[i][j] = '0';
+	    		   	System.out.print(arr[i][j]+ " ");
+		    	 }else {
+		    		 arr[i][j] = (char) filler.codePointAt(0);
+		  	       	 System.out.print(arr[i][j] + " ");
+		  	         fout.print(arr[i][j] + " ");
+		    	 }   
 	       }
 	       else
 	       {
@@ -83,9 +89,14 @@ public class lab2
 	     if(filler.length() == 1)
 	     {
 	       if(j >= temp) {
-	       arr[i][j] = (char) filler.codePointAt(0);
-	       System.out.print(arr[i][j] + " ");
-	       fout.print(arr[i][j] + " ");
+	    	   if( j==1 ) {
+	    		   	arr[i][j] = '0';
+	    		   	System.out.print(arr[i][j]+ " ");
+		    	 }else {
+		    		 arr[i][j] = (char) filler.codePointAt(0);
+		  	       	 System.out.print(arr[i][j] + " ");
+		  	         fout.print(arr[i][j] + " ");
+		    	 }   
 	       }
 	       else
 	       {
