@@ -1,3 +1,7 @@
+/**
+ * lab 3 package
+ */
+
 
 package lab3;
 
